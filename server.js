@@ -125,37 +125,37 @@ footer a{color:#6366f1;text-decoration:none}
 <div class="plans" id="plans">
   <div class="plans-title">
     <h2>Simple, Honest Pricing</h2>
-    <p>One-time yearly fee. No hidden charges. Renew when you want.</p>
+    <p>One-time Monthly fee. No hidden charges. Renew when you want.</p>
   </div>
   <div class="plans-grid">
     <div class="plan-card">
       <div class="plan-tag-pill">SIMPLE</div>
       <div class="plan-name">Simple</div>
-      <div class="plan-price">₹2,000<small>/yr</small></div>
+      <div class="plan-price">₹2,000<small>/month</small></div>
       <div class="plan-printers">1 Printer</div>
     </div>
     <div class="plan-card">
       <div class="plan-tag-pill">BASIC</div>
       <div class="plan-name">Basic</div>
-      <div class="plan-price">₹3,000<small>/yr</small></div>
+      <div class="plan-price">₹3,000<small>/month</small></div>
       <div class="plan-printers">2 Printers</div>
     </div>
     <div class="plan-card featured">
       <div class="plan-tag-pill">STANDARD</div>
       <div class="plan-name">Standard</div>
-      <div class="plan-price">₹5,000<small>/yr</small></div>
+      <div class="plan-price">₹5,000<small>/month</small></div>
       <div class="plan-printers">4 Printers</div>
     </div>
     <div class="plan-card">
       <div class="plan-tag-pill">PRO</div>
       <div class="plan-name">Pro</div>
-      <div class="plan-price">₹8,000<small>/yr</small></div>
+      <div class="plan-price">₹8,000<small>/month</small></div>
       <div class="plan-printers">7 Printers</div>
     </div>
     <div class="plan-card">
       <div class="plan-tag-pill">ADVANCE</div>
       <div class="plan-name">Advance</div>
-      <div class="plan-price" style="font-size:18px">Custom</div>
+      <div class="plan-price">₹10,000<small>/month</small></div>
       <div class="plan-printers">Unlimited Printers</div>
     </div>
   </div>
