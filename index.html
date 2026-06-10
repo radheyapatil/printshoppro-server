@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PrintShop Pro — AI-powered print shop automation for Indian print businesses. Manage WhatsApp orders, billing, printers, and customers from one intelligent platform.">
+  <meta name="keywords" content="print shop software, print shop automation, WhatsApp order management, printer routing, billing software, Indian print shops, print management">
+  <meta name="author" content="PrintShop Pro">
+  <meta name="theme-color" content="#050816">
+  <meta property="og:title" content="PrintShop Pro — AI-Powered Print Shop Automation">
+  <meta property="og:description" content="Manage WhatsApp Orders, Billing, Printers and Customers from One Intelligent Platform.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://printshoppro.com">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PrintShop Pro — AI-Powered Print Shop Automation">
+  <meta name="twitter:description" content="Manage WhatsApp Orders, Billing, Printers and Customers from One Intelligent Platform.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🖨️</text></svg>">
+  <title>PrintShop Pro — AI-Powered Print Shop Automation</title>
+</head>
+<body>
+
+  <!-- ==================== BACKGROUND EFFECTS ==================== -->
+
+  <div class="bg-effects" aria-hidden="true">
+    <div class="bg-gradient-orb orb-1"></div>
+    <div class="bg-gradient-orb orb-2"></div>
+    <div class="bg-gradient-orb orb-3"></div>
+    <div class="bg-grid"></div>
+  </div>
+
+  <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+  <!-- ==================== NAVBAR ==================== -->
+
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#" class="nav-logo" aria-label="PrintShop Pro home">
+        <svg class="logo-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <rect width="32" height="32" rx="8" fill="url(#logoGrad)"/>
+          <path d="M8 10h6l4 6-4 6H8l4-6-4-6z" fill="#fff" opacity=".9"/>
+          <path d="M18 10h6l-4 6 4 6h-6l-4-6 4-6z" fill="#fff" opacity=".6"/>
+          <defs><linearGradient id="logoGrad" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#7C3AED"/><stop offset="1" stop-color="#06B6D4"/></linearGradient></defs>
+        </svg>
+        <span class="logo-text">PrintShop<span class="logo-accent">Pro</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+        <li><a href="#pricing" class="nav-link">Pricing</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="#" class="nav-link nav-link-portal">Customer Portal</a></li>
+        <li><a href="#" class="nav-link nav-link-admin">Admin Login</a></li>
+        <li class="nav-cta-mobile-wrap"><a href="#cta" class="btn btn-primary btn-sm nav-cta-mobile">Start Free Trial</a></li>
+      </ul>
+      <a href="#cta" class="btn btn-primary btn-sm nav-cta">
+        Start Free Trial
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ==================== HERO ==================== -->
+
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Now serving 500+ print shops across India
+        </div>
+        <h1 class="hero-title">
+          AI-Powered<br>
+          <span class="hero-gradient-text">Print Shop Automation</span>
+        </h1>
+        <p class="hero-subtitle">
+          Manage WhatsApp Orders, Billing, Printers and Customers from One Intelligent Platform.
+        </p>
+        <div class="hero-actions">
+          <a href="#cta" class="btn btn-primary btn-lg hero-cta-primary">
+            Start Your Free Trial
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#how-it-works" class="btn btn-ghost btn-lg hero-cta-secondary">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M8 6.5v7l5.5-3.5L8 6.5z" fill="currentColor"/></svg>
+            Watch How It Works
+          </a>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-avatars">
+            <span class="trust-avatar" style="--i:0">P</span>
+            <span class="trust-avatar" style="--i:1">S</span>
+            <span class="trust-avatar" style="--i:2">R</span>
+            <span class="trust-avatar" style="--i:3">A</span>
+            <span class="trust-avatar trust-avatar-plus">+</span>
+          </div>
+          <span class="trust-text">Trusted by <strong>500+</strong> Indian print shop owners</span>
+        </div>
+        <div class="hero-dashboard">
+          <div class="dashboard-mockup">
+            <div class="mockup-header">
+              <span class="mockup-dot dot-red"></span>
+              <span class="mockup-dot dot-yellow"></span>
+              <span class="mockup-dot dot-green"></span>
+              <span class="mockup-title">PrintShop Pro — Live Dashboard</span>
+            </div>
+            <div class="mockup-body">
+              <div class="mockup-stats">
+                <div class="mockup-stat"><span class="mockup-stat-val">1,247</span><span class="mockup-stat-lbl">Today's Orders</span></div>
+                <div class="mockup-stat"><span class="mockup-stat-val">₹3.2L</span><span class="mockup-stat-lbl">Revenue</span></div>
+                <div class="mockup-stat"><span class="mockup-stat-val">32</span><span class="mockup-stat-lbl">Active Jobs</span></div>
+                <div class="mockup-stat"><span class="mockup-stat-val">18</span><span class="mockup-stat-lbl">Printers Online</span></div>
+              </div>
+              <div class="mockup-chart">
+                <div class="mockup-chart-bar" style="--h:70%"><span>Mon</span></div>
+                <div class="mockup-chart-bar" style="--h:85%"><span>Tue</span></div>
+                <div class="mockup-chart-bar" style="--h:60%"><span>Wed</span></div>
+                <div class="mockup-chart-bar" style="--h:90%"><span>Thu</span></div>
+                <div class="mockup-chart-bar active" style="--h:95%"><span>Fri</span></div>
+                <div class="mockup-chart-bar" style="--h:75%"><span>Sat</span></div>
+                <div class="mockup-chart-bar" style="--h:55%"><span>Sun</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== STATS ==================== -->
+
+    <section class="stats" id="stats">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 2v4M16 2v4M3 10h18"/></svg></div>
+            <div class="stat-number" data-target="12000" data-suffix="+">0+</div>
+            <div class="stat-label">Orders Processed</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#06B6D4" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
+            <div class="stat-number" data-target="500" data-suffix="+">0+</div>
+            <div class="stat-label">Print Shops</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+            <div class="stat-number" data-target="99.9" data-suffix="%">0%</div>
+            <div class="stat-label">Uptime</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="1.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
+            <div class="stat-number" data-target="5" data-prefix="₹" data-suffix="Cr+">₹0Cr+</div>
+            <div class="stat-label">Revenue Managed</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FEATURES ==================== -->
+
+    <section class="features" id="features">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Platform Features</span>
+          <h2 class="section-title">Everything your <span class="text-gradient">print shop needs</span></h2>
+          <p class="section-subtitle">One platform to automate your entire print business — from order intake to final delivery.</p>
+        </div>
+        <div class="features-grid">
+          <!-- Card 1: WhatsApp Orders -->
+          <div class="feature-card">
+            <div class="feature-card-glow"></div>
+            <div class="feature-icon-wrap icon-whatsapp">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+            </div>
+            <h3 class="feature-title">WhatsApp Orders</h3>
+            <p class="feature-desc">Auto-capture orders from WhatsApp messages with AI. No more manual data entry. Customers simply send their print requirements and our AI handles the rest.</p>
+            <span class="feature-learn">Learn more <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </div>
+          <!-- Card 2: Smart Printer Routing -->
+          <div class="feature-card">
+            <div class="feature-card-glow"></div>
+            <div class="feature-icon-wrap icon-printer">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 12H4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h2"/><rect x="6" y="9" width="12" height="10" rx="2"/><path d="M6 16h12"/><path d="M6 20h4"/></svg>
+            </div>
+            <h3 class="feature-title">Smart Printer Routing</h3>
+            <p class="feature-desc">AI automatically routes jobs to the best available printer based on workload, capabilities, and priority. Maximize printer utilization and reduce turnaround time.</p>
+            <span class="feature-learn">Learn more <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </div>
+          <!-- Card 3: Auto Billing -->
+          <div class="feature-card">
+            <div class="feature-card-glow"></div>
+            <div class="feature-icon-wrap icon-billing">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <h3 class="feature-title">Auto Billing</h3>
+            <p class="feature-desc">Generate professional GST-compliant invoices automatically. Track payments, send reminders, and manage your entire billing workflow without lifting a finger.</p>
+            <span class="feature-learn">Learn more <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </div>
+          <!-- Card 4: Live Dashboard -->
+          <div class="feature-card">
+            <div class="feature-card-glow"></div>
+            <div class="feature-icon-wrap icon-dashboard">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+            </div>
+            <h3 class="feature-title">Live Dashboard</h3>
+            <p class="feature-desc">Real-time bird's-eye view of your entire print operation. Monitor orders, revenue, active jobs, printer status, and more from a beautiful central dashboard.</p>
+            <span class="feature-learn">Learn more <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </div>
+          <!-- Card 5: License Protection -->
+          <div class="feature-card">
+            <div class="feature-card-glow"></div>
+            <div class="feature-icon-wrap icon-license">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 class="feature-title">License Protection</h3>
+            <p class="feature-desc">Secure hardware-locked licensing with real-time validation. Protect your software investment with bank-grade encryption and anti-tamper technology.</p>
+            <span class="feature-learn">Learn more <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </div>
+          <!-- Card 6: Made For India -->
+          <div class="feature-card">
+            <div class="feature-card-glow"></div>
+            <div class="feature-icon-wrap icon-india">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
+            </div>
+            <h3 class="feature-title">Made For India</h3>
+            <p class="feature-desc">Built specifically for Indian print shops with GST compliance, Hindi/regional language WhatsApp templates, local payment gateway support, and Indian pricing.</p>
+            <span class="feature-learn">Learn more <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== HOW IT WORKS ==================== -->
+
+    <section class="how-it-works" id="how-it-works">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">How It Works</span>
+          <h2 class="section-title">From WhatsApp message to<br><span class="text-gradient">delivered print in 6 steps</span></h2>
+          <p class="section-subtitle">A seamless workflow that automates your entire print production pipeline.</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-line"></div>
+          <div class="timeline-steps">
+            <div class="timeline-step">
+              <div class="timeline-step-icon">
+                <span class="step-number">1</span>
+                <div class="step-icon-bg icon-customer"></div>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+              </div>
+              <div class="timeline-content">
+                <h3 class="timeline-title">Customer</h3>
+                <p class="timeline-desc">Customer sends a WhatsApp message with print requirements — file, quantity, size, paper type.</p>
+              </div>
+            </div>
+            <div class="timeline-step">
+              <div class="timeline-step-icon">
+                <span class="step-number">2</span>
+                <div class="step-icon-bg icon-wa"></div>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
+              </div>
+              <div class="timeline-content">
+                <h3 class="timeline-title">WhatsApp</h3>
+                <p class="timeline-desc">Our system auto-captures the order from WhatsApp, extracts details, and creates a job ticket instantly.</p>
+              </div>
+            </div>
+            <div class="timeline-step">
+              <div class="timeline-step-icon">
+                <span class="step-number">3</span>
+                <div class="step-icon-bg icon-ai"></div>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+              </div>
+              <div class="timeline-content">
+                <h3 class="timeline-title">AI Analysis</h3>
+                <p class="timeline-desc">AI analyzes the job — identifies print specs, estimates cost, checks customer history, and flags any issues.</p>
+              </div>
+            </div>
+
+            <div class="timeline-step">
+              <div class="timeline-step-icon">
+                <span class="step-number">4</span>
+                <div class="step-icon-bg icon-routing"></div>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 12H4a2 2 0 00-2 2v4a2 2 0 002 2h2"/><rect x="6" y="9" width="12" height="10" rx="2"/></svg>
+              </div>
+              <div class="timeline-content">
+                <h3 class="timeline-title">Printer Routing</h3>
+                <p class="timeline-desc">Smart routing engine assigns the job to the optimal printer based on workload, capability, and urgency.</p>
+              </div>
+            </div>
+            <div class="timeline-step">
+              <div class="timeline-step-icon">
+                <span class="step-number">5</span>
+                <div class="step-icon-bg icon-billing-step"></div>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+              </div>
+              <div class="timeline-content">
+                <h3 class="timeline-title">Billing</h3>
+                <p class="timeline-desc">GST invoice is auto-generated, payment collected via UPI or card, and receipt sent to customer on WhatsApp.</p>
+              </div>
+            </div>
+            <div class="timeline-step">
+              <div class="timeline-step-icon">
+                <span class="step-number">6</span>
+                <div class="step-icon-bg icon-delivery"></div>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+              </div>
+              <div class="timeline-content">
+                <h3 class="timeline-title">Delivery</h3>
+                <p class="timeline-desc">Track production, manage delivery, update status automatically. Customer gets notified at every stage via WhatsApp.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== DASHBOARD SHOWCASE ==================== -->
+
+    <section class="dashboard-showcase" id="dashboard">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Dashboard</span>
+          <h2 class="section-title">A command center built for<br><span class="text-gradient">print shop owners</span></h2>
+          <p class="section-subtitle">Beautiful, real-time, and packed with everything you need to run your shop like a Fortune 500 company.</p>
+        </div>
+        <div class="dashboard-showcase-wrap">
+          <div class="showcase-glow"></div>
+          <div class="showcase-frame">
+            <div class="showcase-sidebar">
+              <div class="showcase-logo">
+                <svg width="24" height="24" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="url(#logoGrad2)"/><path d="M8 10h6l4 6-4 6H8l4-6-4-6z" fill="#fff" opacity=".9"/><path d="M18 10h6l-4 6 4 6h-6l-4-6 4-6z" fill="#fff" opacity=".6"/><defs><linearGradient id="logoGrad2" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#7C3AED"/><stop offset="1" stop-color="#06B6D4"/></linearGradient></defs></svg>
+                <span>PrintShop<span>Pro</span></span>
+              </div>
+              <div class="showcase-nav">
+                <a class="active"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg> Dashboard</a>
+                <a><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 2v4M16 2v4M3 10h18"/></svg> Orders</a>
+                <a><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 12H4a2 2 0 00-2 2v4a2 2 0 002 2h2"/><rect x="6" y="9" width="12" height="10" rx="2"/></svg> Printers</a>
+                <a><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg> Billing</a>
+                <a><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg> Customers</a>
+              </div>
+            </div>
+            <div class="showcase-main">
+              <div class="showcase-topbar">
+                <span class="showcase-breadcrumb">Dashboard / Overview</span>
+                <span class="showcase-time">🟢 Live — Updated 3s ago</span>
+              </div>
+              <div class="showcase-cards">
+                <div class="showcase-card"><span class="sc-label">Orders Today</span><span class="sc-value">1,247</span><span class="sc-change up">↑ 12%</span></div>
+                <div class="showcase-card"><span class="sc-label">Revenue</span><span class="sc-value">₹3,24,500</span><span class="sc-change up">↑ 18%</span></div>
+                <div class="showcase-card"><span class="sc-label">Active Jobs</span><span class="sc-value">32</span><span class="sc-change neutral">—</span></div>
+                <div class="showcase-card"><span class="sc-label">Printers Online</span><span class="sc-value">18/22</span><span class="sc-change down">↓ 2</span></div>
+              </div>
+              <div class="showcase-table">
+                <div class="showcase-table-header">
+                  <span>Recent Orders</span><span class="showcase-badge-new">New</span>
+                </div>
+                <div class="showcase-table-row">
+                  <span>#PSP-1042</span><span>A4 Color Flyers × 500</span><span class="status processing">Processing</span><span>₹4,200</span>
+                </div>
+                <div class="showcase-table-row">
+                  <span>#PSP-1041</span><span>Visiting Cards × 1000</span><span class="status ready">Ready</span><span>₹1,800</span>
+                </div>
+                <div class="showcase-table-row">
+                  <span>#PSP-1040</span><span>Flex Banner 6×4 ft</span><span class="status dispatched">Dispatched</span><span>₹2,500</span>
+                </div>
+                <div class="showcase-table-row">
+                  <span>#PSP-1039</span><span>Wedding Cards × 500</span><span class="status delivered">Delivered</span><span>₹12,000</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PRICING ==================== -->
+
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Pricing</span>
+          <h2 class="section-title">Plans that scale with<br><span class="text-gradient">your print business</span></h2>
+          <p class="section-subtitle">Start small, upgrade as you grow. No hidden fees. Cancel anytime.</p>
+        </div>
+        <div class="pricing-grid">
+          <!-- Simple Plan -->
+          <div class="pricing-card">
+            <div class="pricing-card-header">
+              <h3 class="plan-name">Simple</h3>
+              <p class="plan-desc">For small print shops getting started</p>
+              <div class="plan-price">
+                <span class="price-currency">₹</span>
+                <span class="price-amount">999</span>
+                <span class="price-period">/month</span>
+              </div>
+            </div>
+            <ul class="plan-features">
+              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Up to 500 orders/month</li>
+              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> WhatsApp order capture</li>
+              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Basic billing</li>
+              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> 3 printer support</li>
+            </ul>
+            <a href="#cta" class="btn btn-outline btn-block">Get Started</a>
+          </div>
+          <!-- Basic Plan -->
+          <div class="pricing-card">
+            <div class="pricing-card-header">
+              <h3 class="plan-name">Basic</h3>
+              <p class="plan-desc">For growing print businesses</p>
+              <div class="plan-price">
+                <span class="price-currency">₹</span>
+                <span class="price-amount">1,999</span>
+                <span class="price-period">/month</span>
+              </div>
+            </div>
+            <ul class="plan-features">
+              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Up to 2,000 orders/month</li>
+              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Everything in Simple</li>
+              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Smart printer routing</li>
+              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> 10 printer support</li>
+              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Email support</li>
+            </ul>
+            <a href="#cta" class="btn btn-outline btn-block">Get Started</a>
+          </div>
+          <!-- Standard Plan — Highlighted -->
+          <div class="pricing-card pricing-card-featured">
+            <div class="pricing-badge">Most Popular</div>
+            <div class="pricing-card-header">
+              <h3 class="plan-name">Standard</h3>
+              <p class="plan-desc">For established print businesses</p>
+              <div class="plan-price">
+                <span class="price-currency">₹</span>
+                <span class="price-amount">3,999</span>
+                <span class="price-period">/month</span>
+              </div>
+            </div>
+            <ul class="plan-features">
+              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Up to 10,000 orders/month</li>
+              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Everything in Basic</li>
+              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> AI analytics & insights</li>
+              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Unlimited printers</li>
+              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Priority WhatsApp support</li>
+              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Customer portal</li>
+            </ul>
+            <a href="#cta" class="btn btn-primary btn-block">Start Free Trial</a>
+          </div>
+          <!-- Pro Plan -->
+          <div class="pricing-card">
+            <div class="pricing-card-header">
+              <h3 class="plan-name">Pro</h3>
+              <p class="plan-desc">For high-volume print businesses</p>
+              <div class="plan-price">
+                <span class="price-currency">₹</span>
+                <span class="price-amount">7,999</span>
+                <span class="price-period">/month</span>
+              </div>
+            </div>
+            <ul class="plan-features">
+              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Unlimited orders</li>
+              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Everything in Standard</li>
+              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Multi-branch management</li>
+              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> API access</li>
+              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Dedicated account manager</li>
+              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Custom integrations</li>
+            </ul>
+            <a href="#cta" class="btn btn-outline btn-block">Get Started</a>
+          </div>
+          <!-- Advance Plan -->
+          <div class="pricing-card">
+            <div class="pricing-card-header">
+              <h3 class="plan-name">Advance</h3>
+              <p class="plan-desc">For enterprise print chains</p>
+              <div class="plan-price">
+                <span class="price-currency">₹</span>
+                <span class="price-amount">14,999</span>
+                <span class="price-period">/month</span>
+              </div>
+            </div>
+            <ul class="plan-features">
+              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Everything in Pro</li>
+              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> White-label solution</li>
+              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> On-premise deployment</li>
+              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> SLA guarantee</li>
+              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> 24/7 phone support</li>
+              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Custom development</li>
+            </ul>
+            <a href="#cta" class="btn btn-outline btn-block">Contact Sales</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TESTIMONIALS ==================== -->
+
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Testimonials</span>
+          <h2 class="section-title">Trusted by<br><span class="text-gradient">print shop owners</span></h2>
+          <p class="section-subtitle">Hear from real print shop owners who transformed their business with PrintShop Pro.</p>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Before PrintShop Pro, we were managing 200 orders a day manually on WhatsApp and paper. Now we handle 800+ orders daily with half the staff. Our revenue has tripled in 6 months."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">RS</div>
+              <div>
+                <div class="testimonial-name">Rajesh Sharma</div>
+                <div class="testimonial-role">Owner, Sharma Printers — Delhi</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"The smart routing alone paid for the subscription in the first week. We went from 60% printer utilization to 94%. The WhatsApp-to-invoice flow is like magic for our customers."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">MP</div>
+              <div>
+                <div class="testimonial-name">Mehul Patel</div>
+                <div class="testimonial-role">Director, Patel Digital Prints — Mumbai</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"We run 3 branches across Bangalore. PrintShop Pro gave us a single dashboard to manage everything. Their GST billing is a lifesaver. Best software investment we've made."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">AK</div>
+              <div>
+                <div class="testimonial-name">Arun Kumar</div>
+                <div class="testimonial-role">Founder, PrintKraft — Bangalore</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FAQ ==================== -->
+
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">FAQ</span>
+          <h2 class="section-title">Frequently asked<br><span class="text-gradient">questions</span></h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-btn" aria-expanded="false">
+              <span>How does WhatsApp order integration work?</span>
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>PrintShop Pro connects to your existing WhatsApp Business account via the official WhatsApp Cloud API. When a customer sends a message with print requirements (file, quantity, size, etc.), our AI extracts the details and automatically creates a job ticket. No manual copying or data entry — it all happens in seconds.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-btn" aria-expanded="false">
+              <span>Is it GST compliant?</span>
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Yes. PrintShop Pro generates fully GST-compliant invoices with proper HSN/SAC codes, CGST/SGST/IGST breakup, and all mandatory fields as per Indian GST law. Our billing engine is updated to stay compliant with the latest GST regulations.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-btn" aria-expanded="false">
+              <span>Can I migrate from my existing system?</span>
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Absolutely. We provide a dedicated migration assistant that can import your customer data, order history, and printer configurations from Excel, Tally, or any other system. Our team handles the entire migration process for you — it's included free with every plan.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-btn" aria-expanded="false">
+              <span>What kind of support do you provide?</span>
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>All plans include WhatsApp chat support with our India-based team. Standard and above include priority support with faster response times. Pro and Advance plans get a dedicated account manager. We also provide free onboarding calls and training for your staff.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-btn" aria-expanded="false">
+              <span>How does license protection work?</span>
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>PrintShop Pro uses hardware-locked licensing with real-time cloud validation. Each license is tied to a specific machine, preventing unauthorized use. We use bank-grade AES-256 encryption for all license tokens. Licenses can be transferred or upgraded seamlessly through your admin dashboard.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-btn" aria-expanded="false">
+              <span>Can I try before I buy?</span>
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Yes! We offer a 14-day free trial on the Standard plan with no credit card required. You get full access to all features including WhatsApp integration, smart routing, billing, and the live dashboard. If you love it (and we know you will), choose a plan that fits your needs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FINAL CTA ==================== -->
+
+    <section class="cta" id="cta">
+      <div class="container">
+        <div class="cta-card">
+          <div class="cta-glow"></div>
+          <div class="cta-content">
+            <h2 class="cta-title">Ready to automate your print shop?</h2>
+            <p class="cta-subtitle">Join 500+ Indian print shops already saving hours every day. Start your 14-day free trial — no credit card required.</p>
+            <div class="cta-actions">
+              <a href="#" class="btn btn-primary btn-lg">
+                Start Free Trial Now
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+              <a href="#" class="btn btn-ghost btn-lg">Talk to Sales</a>
+            </div>
+            <p class="cta-note">Free 14-day trial · No credit card · Cancel anytime · <a href="#">Watch demo</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="footer-logo">
+            <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect width="32" height="32" rx="8" fill="url(#logoGrad3)"/><path d="M8 10h6l4 6-4 6H8l4-6-4-6z" fill="#fff" opacity=".9"/><path d="M18 10h6l-4 6 4 6h-6l-4-6 4-6z" fill="#fff" opacity=".6"/><defs><linearGradient id="logoGrad3" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#7C3AED"/><stop offset="1" stop-color="#06B6D4"/></linearGradient></defs></svg>
+            <span>PrintShop<span>Pro</span></span>
+          </a>
+          <p class="footer-desc">AI-powered print shop automation for India. Trusted by 500+ print businesses nationwide.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="WhatsApp"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg></a>
+            <a href="#" aria-label="YouTube"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+            <a href="#" aria-label="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-links-col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Changelog</a></li>
+            <li><a href="#">Roadmap</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4>Portals</h4>
+          <ul>
+            <li><a href="#">Customer Portal</a></li>
+            <li><a href="#">Admin Login</a></li>
+            <li><a href="#">Printer App</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">WhatsApp Support</a></li>
+            <li><a href="#">API Docs</a></li>
+            <li><a href="#">Status</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 PrintShop Pro. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Refund Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
